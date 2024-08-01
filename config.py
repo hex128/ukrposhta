@@ -1,0 +1,17 @@
+SENDER_UUID = '01234567-89ab-cdef-0123-456789abcdef'
+SENDER_ADDRESS_ID = 123456789
+POSTCODE = '012345'
+REGION = "Київ"
+DISTRICT = "Київ"
+CITY = "Київ"
+STREET = "вул. Вулиця"
+HOUSE_NUMBER = "1"
+WEIGHT = 20
+
+COOKIE = ''
+REFERER = ''
+CSRF_TOKEN = ''
+
+GROUPS = {
+    '1-100.csv': "01234567-89ab-cdef-0123-456789abcdef",
+}

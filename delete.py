@@ -4,6 +4,7 @@ import http.client
 import sys
 
 import request
+from config import *
 
 for item in [
     # "01234567-89ab-cdef-0123-456789abcdef",
@@ -14,7 +15,7 @@ for item in [
         "item": item
     }, ensure_ascii=False)
     print(payload)
-    data = request.make(payload)
+    data = request.make(payload, COOKIE, REFERER, CSRF_TOKEN)
     success = False
     try:
         success = json.loads(data).get("code_DeleteShipment", None) == 200
